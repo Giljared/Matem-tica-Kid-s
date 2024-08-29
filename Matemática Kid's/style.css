@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #020211;
+}
+
+
+  
+  p, h2,h3, h4{
+    color: rgb(15, 6, 6);
+}
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Muda a direção para coluna em telas menores */
+    }
+  }
+
+  
+
+    footer {
+        margin: 10px;
+        width: 100%;  /* Maintains full width */
+        display: flex;
+        flex-direction: column;  /* Stacks content vertically */
+        justify-content: flex-end;  /* Aligns content to bottom */
+        align-items: center;
+        padding: 20px;  /* Adjust padding as needed */
+        background-color: white;  /* Add a light background color */
+        color: #333;  /* Set the text color */
+      }
+      
+      footer p {
+        margin: 0px;  /* Remove default margins */
+        font-size: 0.8rem;  /* Use a smaller font size for responsiveness */
+      }
+      
+      .redes {
+        display: flex;  /* Change to flex for horizontal layout */
+        flex-direction: row;  /* Arrange icons horizontally */
+        justify-content: center;  /* Center icons horizontally */
+        align-items: center;  /* Align icons vertically */
+        padding: 0;  /* Remove padding for spacing between icons */
+        margin: 10px 0;  /* Add some margin above and below */
+      }
+      
+      .redes a {
+        margin: 0 5px;  /* Add spacing between links */
+      }
+      
+      .redes img {
+        width: 20px;  /* Adjust image width */
+        height: 20px;  /* Set image height */
+      }
+
+.logo{
+    width: 10%;
+    border-radius: 25%;
+    float: left;
+    margin-left: 10%;
+}
+.container{
+   padding: 1.3rem;
+   overflow: hidden;
+   background-color: #020211;
+}
+.container h1{
+    float: left;
+    margin-left: 10%;
+    color: white;
+}
+.container ul{
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin-left: 60%;
+}
+.container li{
+    margin-top: 0.6rem;
+    float: left;
+    padding: 0 1.3rem 0 1.3rem;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+.current a::after{
+    content: '_';
+    background-color: white;
+    font-size: 4px;
+    display: block;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 82% 18%;
+}
+.equation{
+    font-size: 4rem;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 15%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+#num1{
+    color: #660a0a;
+}
+#num2{
+    color: #26e714;
+}
+.equation h2{
+    color: #0b7381;
+}
+.equation h3{
+    color: rgb(18, 8, 8);
+}
+.equation h2, .equation h3{
+    display: inline;
+    padding: 1.3rem;
+}
+.answer-options{
+    font-size: 4.2rem;
+    margin: 10px;
+}
+.answer-options h2{
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+#option1{
+    background-color: #fe4a49;
+    transition: 1s;
+}
+#option1:hover{
+    color: #fe4a49;
+    background-color: white;
+}
+#option2{
+    background-color: #0b7381;
+    transition: 1s;
+}
+#option2:hover{
+    color: #2ab7ca;
+    background-color: white;
+}
+#option3{
+    background-color: #26e714;
+    transition: 1s;
+}
+#option3:hover{
+    color: #fed766;
+    background-color: white;
+}
+
+
+@media screen and (max-width:1000px){
+    .wrapper{
+        grid-template-columns: 60% 40%;
+    }
+    .equation, .answer-options{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:600px){
+    .wrapper{
+        grid-template-columns: 65% 35%;
+    }
+    .equation, .answer-options{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:450px){
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .equation, .answer-options{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem;
+    }
+    .container ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 0%;
+    }
+}
