@@ -1,5 +1,5 @@
 # Matem-tica-Kid-s
-# Link project: https://math-kids-gil-silva.netlify.app/
+# Link project: https://kids-math-gil-silva.netlify.app/
 ![matematica kids](https://github.com/user-attachments/assets/fd0c6b5d-f70d-4880-8bbe-0e5a7cdcb910)
 
 ![matematica kids2](https://github.com/user-attachments/assets/f90019ee-2602-484b-9d7c-3477f42e0326)
